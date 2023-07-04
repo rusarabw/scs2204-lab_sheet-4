@@ -8,5 +8,5 @@ object solution extends App {
 
     print("Enter deposit amount: ");
     val deposit = scala.io.StdIn.readFloat()
-    println("Interest is: " + interest(deposit));
+    if (deposit < 0) println("Invalid input") else println("Interest is: " + interest(deposit));
 }
